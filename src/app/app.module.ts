@@ -6,7 +6,7 @@ import { UserComponent } from "./user/user.component";
 import { UserDetailComponent } from "./user/user-detail.component";
 import { UserEditComponent } from "./user/user-edit.component";
 import { HomeComponent } from "./home-component.component";
-
+import { APP_ROUTES_PROVIDER } from "./app.routes";
 
 @NgModule({
     declarations: [
@@ -17,6 +17,7 @@ import { HomeComponent } from "./home-component.component";
         HomeComponent
     ],
     imports: [BrowserModule],
-    bootstrap: [AppComponent]
+    bootstrap: [AppComponent],
+    providers: [APP_ROUTES_PROVIDER]
 })
 export class AppModule { }
