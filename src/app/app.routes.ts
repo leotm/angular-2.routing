@@ -1,4 +1,4 @@
-import { provideRoutes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 
 import { UserComponent } from './user/user.component';
 import { HomeComponent } from './home-component.component';
@@ -8,6 +8,4 @@ const APP_ROUTES = [
   { path: '', component: HomeComponent }
 ];
 
-export const APP_ROUTES_PROVIDER = [
-  provideRoutes(APP_ROUTES)
-]
+export const routing = RouterModule.forRoot(APP_ROUTES);
