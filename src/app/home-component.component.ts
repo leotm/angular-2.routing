@@ -20,9 +20,9 @@ export class HomeComponent implements OnDestroy {
   param: string;
 
   constructor(private router: Router) {
-    this.subscription = router.routerState.queryParams.subscribe(
-      (queryParam: any) => this.param = queryParam['analytics']
-    );
+    // this.subscription = router.routerState.queryParams.subscribe(
+    //   (queryParam: any) => this.param = queryParam['analytics']
+    // );
   }
 
   ngOnDestroy() {
