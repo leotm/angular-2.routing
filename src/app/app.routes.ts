@@ -4,7 +4,7 @@ import { UserComponent } from './user/user.component';
 import { HomeComponent } from './home-component.component';
 
 const APP_ROUTES = [
-  { path: 'user', component: UserComponent },
+  { path: 'user/:id', component: UserComponent },
   { path: '', component: HomeComponent }
 ];
 
