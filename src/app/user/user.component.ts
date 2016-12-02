@@ -1,7 +1,5 @@
 import { Component, OnDestroy } from '@angular/core';
-
 import { Router, ActivatedRoute } from '@angular/router';
-
 import { Subscription } from 'rxjs/Rx';
 
 @Component({
@@ -9,7 +7,7 @@ import { Subscription } from 'rxjs/Rx';
   selector: 'app-user-component',
   template: `
       <h1>User Component</h1>
-      <button (click)="onNavigate()">Go Home</button>
+      <button [routerLink]="['/param']" [queryParams]="{analytics:100}">Query Param</button>
       <hr>
       {{id}}
     `
@@ -22,10 +20,6 @@ export class UserComponent implements OnDestroy {
     this.subscription = activatedRoute.params.subscribe(
       (param: any) => this.id = param['id']
     );
-  }
-
-  onNavigate() {
-    this.router.navigate(['/']);
   }
 
   ngOnDestroy() {

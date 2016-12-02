@@ -7,6 +7,7 @@ import { UserDetailComponent } from './user/user-detail.component';
 import { UserEditComponent } from './user/user-edit.component';
 import { HomeComponent } from './home.component';
 import { routing } from './app.routes';
+import { ParamComponent } from './param.component';
 
 @NgModule({
     declarations: [
@@ -14,7 +15,8 @@ import { routing } from './app.routes';
         UserComponent,
         UserDetailComponent,
         UserEditComponent,
-        HomeComponent
+        HomeComponent,
+        ParamComponent
     ],
     imports: [BrowserModule, routing],
     bootstrap: [AppComponent]
