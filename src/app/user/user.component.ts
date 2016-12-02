@@ -29,6 +29,6 @@ export class UserComponent implements OnDestroy {
   }
 
   ngOnDestroy() {
-    this.subscription.unsubscribe; // Prevent memory leak
+    this.subscription.unsubscribe;
   }
 }
