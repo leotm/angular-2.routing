@@ -10,6 +10,8 @@ import { Subscription } from 'rxjs/Rx';
       <button [routerLink]="['/param']" [queryParams]="{analytics:100}">Query Param</button>
       <hr>
       {{id}}
+      <hr>
+      <router-outlet></router-outlet>
     `
 })
 export class UserComponent implements OnDestroy {
